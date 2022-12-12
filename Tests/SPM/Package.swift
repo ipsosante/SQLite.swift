@@ -20,7 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "test",
-            dependencies: [.product(name: "SQLite", package: "SQLite.swift")]
+            dependencies: [.product(name: "SCSQLite", package: "SCSQLite.swift")]
 	)
     ]
 )

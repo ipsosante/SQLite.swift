@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SQLite.swift",
+    name: "SCSQLite.swift",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),
@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SQLite",
+            name: "SCSQLite",
             targets: ["SQLite"]
         )
     ],

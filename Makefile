@@ -32,8 +32,8 @@ clean:
 	$(BUILD_TOOL) $(BUILD_ARGUMENTS) clean
 
 repl:
-	@$(BUILD_TOOL) $(BUILD_ARGUMENTS) -derivedDataPath $(TMPDIR)/SQLite.swift > /dev/null && \
-		swift -F '$(TMPDIR)/SQLite.swift/Build/Products/Debug'
+	@$(BUILD_TOOL) $(BUILD_ARGUMENTS) -derivedDataPath $(TMPDIR)/SCSQLite.swift > /dev/null && \
+		swift -F '$(TMPDIR)/SCSQLite.swift/Build/Products/Debug'
 
 sloc:
 	@zsh -c "grep -vE '^ *//|^$$' Sources/**/*.{swift,h,m} | wc -l"
